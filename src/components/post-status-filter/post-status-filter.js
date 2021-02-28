@@ -1,10 +1,13 @@
 import React from 'react';
 
+import './post-status-filter.css';
+
+
 const PostStatusFilter = () => {
     return(
         <div className="btn-group">
-            <button></button>
-            <button></button>
+            <button className="btn btn-outline-info active">Все</button>
+            <button className="btn btn-outline-info">Понравилось</button>
         </div>
     )
 }
