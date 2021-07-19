@@ -132,7 +132,7 @@ export default class App extends Component {
         const visiblePosts = this.filterPost(this.searchPost(data, term), filter);
 
         return (
-            <div className="app" >
+            <div className="app container" >
                 <AppHeader 
                 liked={liked}
                 allPosts={allPosts}/>
@@ -150,7 +150,6 @@ export default class App extends Component {
                     onToggleLiked={this.onToggleLiked} />
                 <PostAddForm
                     onAdd={this.addItem} />
-
             </div>
         );
     }
